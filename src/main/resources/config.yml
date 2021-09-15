@@ -1,0 +1,41 @@
+########################################################################################################################
+##                                                                                                                    ##
+##                                                  Bedwars1058 Addon Winstreak                                       ##
+##                                                                                                                    ##
+########################################################################################################################
+##Author Alen_Alex
+##Developed For KGO Network
+
+##Version -> Do not touch this
+##debugger -> Enable/Disable Debbuger
+##Debugger prints some info help messages to find out issues
+version: "1.0"
+debugger: false
+#######################################################################################################################
+##prefix -> This is what the prefix of the messages be
+prefix: "&8[&6Win&eStreak&8] &f» "
+#######################################################################################################################
+## This plugin requires mysql server to work, Currently no other methods are working
+##mysql-server:
+##host -> Address of the host server
+##port -> Port of the host server
+##username -> Username of the connection database
+##password -> Password for the database connection
+##database -> Name of the database
+mysql-server:
+  host: "in04.adiline.net"
+  port: "3306"
+  username: "u174_KqtOnUSd9g"
+  password: "U6wiFDD39ma!V!2QLIjOdK45"
+  database: "s174_winstreak"
+#######################################################################################################################
+##This sections define some of the settings used by the player
+
+##saveGameInstantly -> Do gameplay stats need to updated after each game.
+##While true -> Stats for each player gets updated to database after they play each game (Safe and use it if there are no server crashes)
+##While false -> Stats for each players will be saved in cache and will only update them to database once the player leave the server (If your server have frequent crash, don't use it. It only benfiets in a small resource saving, not worth cons it have)
+##Using False also may have issues updating leaderboard.
+settings:
+  saveGameInstantly: true
+  leaderboard:
+    updateLeaderboardInterval: 5
