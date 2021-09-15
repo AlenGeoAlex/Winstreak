@@ -40,8 +40,7 @@ public final class Winstreak extends JavaPlugin {
             getLogger().severe("If you have just started the plugin. Add the creditionals and restart the server again");
             return;
         }
-        //MySQLDatabase = new MySQL("jdbc:mysql://"+Configuration.getMysqlHost()+":"+Configuration.getMysqlPort()+"/"+Configuration.getMysqlDatabaseName()+"?autoReconnect=true",Configuration.getMysqlUsername(),Configuration.getMysqlPassword());
-        MySQLDatabase = new MySQL("jdbc:mysql://in04.bya.ac:3306/s174_winstreak?autoReconnect=true","u174_KqtOnUSd9g","U6wiFDD39ma!V!2QLIjOdK45");
+        MySQLDatabase = new MySQL("jdbc:mysql://"+Configuration.getMysqlHost()+":"+Configuration.getMysqlPort()+"/"+Configuration.getMysqlDatabaseName()+"?autoReconnect=true",Configuration.getMysqlUsername(),Configuration.getMysqlPassword());
 
 
         DataManager.setupDatabase();
